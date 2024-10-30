@@ -4,8 +4,8 @@ from openai import OpenAI
 # Show title and description.
 st.set_page_config(page_title="Document ASK GPT", page_icon="📖", layout="wide")
 st.title('''Luke's AI Doc. ASK 프로그램 테스트_Ver1😏''')
-st.subheader('※ 배포금지. 개인용 유료 API key 사용 (해외시장 전용)')    
-st.text('''Instruction - txt 형식의 불량 증상 파일 업로드 후 AI 질문 (최대 100줄 이하)''')    
+st.subheader('※ 배포금지. 개인용 유료 API key 사용 (해외시장 공통셀 전용)')    
+st.text('''Instruction - txt 형식의 불량 증상 파일 업로드 후 AI 질문 (GPT 4o 사용 - 최대 1000줄 이하)''')    
 st.markdown('---')
 
 apikey = st.secrets["openai"]["apikey"]  # 환경변수나 Streamlit secrets에서 가져오기
